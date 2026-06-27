@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Cadastro de Tarefas</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <div class="header">
+      <h1>Cadastro de Tarefas</h1>
+      <button id="botao-tema" class="botao-tema">🌙 Dark Mode</button>
+    </div>
+
+    <form id="formulario">
+      <input
+        id="tarefa"
+        type="text"
+        placeholder="Nova tarefa"
+      >
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <p id="mensagem"></p>
+
+    <div class="filtros">
+      <button id="filtro-todas" class="botao-filtro ativo">Todas</button>
+      <button id="filtro-pendentes" class="botao-filtro">Pendentes</button>
+      <button id="filtro-concluidas" class="botao-filtro">Concluídas</button>
+    </div>
+
+    <p class="contador-detalhado">
+      Total: <span id="contador-total">0</span> | 
+      Concluídas: <span id="contador-concluidas">0</span> | 
+      Pendentes: <span id="contador-pendentes">0</span>
+    </p>
+
+    <ul id="lista"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
